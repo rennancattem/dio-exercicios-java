@@ -20,7 +20,6 @@ public class Crime {
         // Declaração de variáveis
         Scanner scan = new Scanner(System.in);
         List<Integer> respostas = new ArrayList<Integer>();
-        List<String> classificacao = Arrays.asList("Suspeita", "Cumplice", "Assassina", "Inocente");
         int respostasPositivas = 0;
 
 
