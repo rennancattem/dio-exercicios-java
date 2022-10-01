@@ -40,6 +40,6 @@ public class Main {
 
         System.out.println("\n**Ordem Nome / Ano de Criação / IDE**");
         minhasLinguagens.sort(new ComparatorNomeAnoIDE());
-        System.out.println(minhasLinguagens);
+        for (LinguagemFavorita linguagens : minhasLinguagens) System.out.println(linguagens);
     }
 }
