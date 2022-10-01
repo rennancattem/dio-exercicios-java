@@ -90,6 +90,33 @@ public class Principal {
         // Exibindo a soma das populações
         Iterator<Integer> iterator = estados.values().iterator();
         Integer soma = 0;
+        while(iterator.hasNext()){
+            soma += iterator.next();
+        }
+        System.out.println("\n**\tSoma das Populações\t**");
+        System.out.println(inteiro.format(soma));
+
+        // Exibindo a media das Populações
+        Double media = Double.valueOf(soma/estados.size());
+        System.out.println("\n**\tMédia das Populações\t**");
+        System.out.println(inteiro.format(media));
+
+        // Removendo populações menores que 4.000.000
+        iterator = estados.values().iterator();
+        while (iterator.hasNext()){
+            if(iterator.next() < 4000000) iterator.remove();
+        }
+        System.out.println("\n**\tEstados e População\t**");
+        System.out.println(estados);
+
+        // Apagando dicionario de estados
+        estados.clear();
+
+        // Verificando se o dicionário está vazio
+        if (estados.isEmpty())
+            System.out.println("\nO dicionário está vazio!");
+        else
+            System.out.println("\nO dicionário não está vazio!");
     }
 
 }
