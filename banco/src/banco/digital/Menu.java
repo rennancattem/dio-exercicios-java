@@ -120,9 +120,8 @@ public class Menu{
         iterator = contas.iterator();
         while (iterator.hasNext()){
             conta = iterator.next();
-            System.out.println("\nConta encontrada: " + contas.indexOf(conta));
             next = conta.getCliente();
-            System.out.println("Cliente encontrado: " + next.getNome().indexOf(nome));
+
             if(next.getNome().indexOf(nome) == 0) {
                 numeroConta = contas.indexOf(conta);
                 AcessarConta();
