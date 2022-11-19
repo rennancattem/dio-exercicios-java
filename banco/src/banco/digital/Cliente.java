@@ -1,7 +1,6 @@
 package banco.digital;
 
-public class Cliente {
-
+public class Cliente{
     private String nome;
     private int tipoConta;
     private double saldo;
@@ -29,4 +28,5 @@ public class Cliente {
     public void setNome(String nome) {
         this.nome = nome;
     }
+
 }
